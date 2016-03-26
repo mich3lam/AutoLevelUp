@@ -255,7 +255,19 @@ tipo = " Lane";
             }
             else if (Player.BaseSkinName == "Renekton") abilitySequence = new int[] { 2, 3, 1, 1, 1, 4, 1, 3, 1, 3, 4, 3, 3, 2, 2, 4, 2, 2 };
             else if (Player.BaseSkinName == "Reksai") abilitySequence = new int[] { 1, 2, 3, 1, 1, 4, 1, 2, 1, 2, 4, 2, 2, 3, 3, 4, 3, 3 };
-            else if (Player.BaseSkinName == "Rengar") abilitySequence = new int[] { 1, 2, 3, 1, 1, 4, 1, 3, 1, 3, 4, 3, 3, 2, 2, 4, 2, 2 };
+            else if (Player.BaseSkinName == "Rengar")
+            {
+                if (Player.PercentMagicDamageMod > Player.PercentPhysicalDamageMod)
+                {
+                    abilitySequence = new int[] { 1, 2, 3, 2, 2, 4, 2, 1, 2, 1, 4, 1, 1, 3, 3, 4, 3, 3 };
+                    tipo = " AP";
+                }
+                else
+                {
+                    abilitySequence = new int[] { 1, 2, 3, 1, 1, 4, 1, 3, 1, 3, 4, 3, 3, 2, 2, 4, 2, 2 };
+                    tipo = " AD";
+                }
+            }
             else if (Player.BaseSkinName == "Riven") abilitySequence = new int[] { 3, 1, 2, 1, 1, 4, 1, 3, 1, 3, 4, 3, 3, 2, 2, 4, 2, 2 };
             else if (Player.BaseSkinName == "Rumble")
                     {
