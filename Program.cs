@@ -43,11 +43,13 @@ namespace AutoLevelup
             else if (Player.BaseSkinName == "Chogath") abilitySequence = new int[] { 3, 1, 2, 3, 3, 4, 3, 2, 3, 2, 4, 2, 2, 1, 1, 4, 1, 1 };
             else if (Player.BaseSkinName == "Corki")
             {
-                if (Player.PercentMagicDamageMod > Player.PercentPhysicalDamageMod)
+                var player = HeroManager.Player;
+                if (player.TotalMagicalDamage - player.BaseAbilityDamage > player.TotalAttackDamage - player.BaseAttackDamage)
                 {
                     abilitySequence = new int[] { 1, 2, 1, 3, 1, 4, 1, 3, 1, 3, 4, 3, 3, 2, 2, 4, 2, 2 };
                     tipo = " AP";
                 }
+
                 else
                 {
                     abilitySequence = new int[] { 3, 1, 2, 1, 1, 4, 1, 3, 1, 3, 4, 3, 3, 2, 2, 4, 2, 2 };
@@ -75,7 +77,8 @@ namespace AutoLevelup
             else if (Player.BaseSkinName == "Evelynn") abilitySequence = new int[] { 1, 3, 2, 1, 1, 4, 1, 3, 1, 3, 4, 3, 3, 2, 2, 4, 2, 2 };
             else if (Player.BaseSkinName == "Ezreal")
             {
-                if (Player.PercentMagicDamageMod > Player.PercentPhysicalDamageMod)
+				var player = HeroManager.Player;
+                if (player.TotalMagicalDamage - player.BaseAbilityDamage > player.TotalAttackDamage - player.BaseAttackDamage)
                 {
                     abilitySequence = new int[] { 1, 2, 3, 2, 2, 4, 2, 3, 2, 3, 4, 3, 3, 1, 1, 4, 1, 1 };
                     tipo = " AP";
@@ -256,8 +259,9 @@ tipo = " Lane";
             else if (Player.BaseSkinName == "Renekton") abilitySequence = new int[] { 2, 3, 1, 1, 1, 4, 1, 3, 1, 3, 4, 3, 3, 2, 2, 4, 2, 2 };
             else if (Player.BaseSkinName == "Reksai") abilitySequence = new int[] { 1, 2, 3, 1, 1, 4, 1, 2, 1, 2, 4, 2, 2, 3, 3, 4, 3, 3 };
             else if (Player.BaseSkinName == "Rengar")
-            {
-                if (Player.PercentMagicDamageMod > Player.PercentPhysicalDamageMod)
+				 {
+				var player = HeroManager.Player;
+                if (player.TotalMagicalDamage - player.BaseAbilityDamage > player.TotalAttackDamage - player.BaseAttackDamage)
                 {
                     abilitySequence = new int[] { 1, 2, 3, 2, 2, 4, 2, 1, 2, 1, 4, 1, 1, 3, 3, 4, 3, 3 };
                     tipo = " AP";
@@ -286,7 +290,8 @@ tipo = " Lane";
             else if (Player.BaseSkinName == "Sejuani") abilitySequence = new int[] { 2, 1, 3, 2, 2, 4, 2, 3, 2, 3, 4, 3, 3, 1, 1, 4, 1, 1 };
             else if (Player.BaseSkinName == "Shaco")
             {
-                if (Player.PercentMagicDamageMod > Player.PercentPhysicalDamageMod)
+				var player = HeroManager.Player;
+                if (player.TotalMagicalDamage - player.BaseAbilityDamage > player.TotalAttackDamage - player.BaseAttackDamage)
                 {
                     abilitySequence = new int[] { 2, 1, 3, 2, 3, 4, 3, 3, 3, 2, 2, 2, 4, 1, 1, 4, 1, 1 };
                     tipo = " AP";
