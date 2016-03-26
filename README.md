@@ -1,5 +1,8 @@
 # AutoLevelUp
 Updated AutoLevelUp
 
-Updated Version of https://github.com/ndd305/Lsharp AutoLevelUp :D
-All Credits belong to ndd305 :) !
+Updated Version of https://github.com/ndd305/Lsharp AutoLevelUp.
+
+Credits to ndd305 for the original code.
+
+I updated all skill squences to 6.6 :)
