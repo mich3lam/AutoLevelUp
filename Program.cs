@@ -364,9 +364,9 @@ tipo = " Lane";
             else if (Player.BaseSkinName == "Zyra") abilitySequence = new int[] { 1, 2, 1, 3, 1, 4, 1, 3, 1, 3, 4, 3, 3, 2, 2, 4, 2, 2 };
 
             Game.OnUpdate += Game_OnUpdate;
-            Game.PrintChat("<font color='#ff9a00'>AutoLevelup Updated by ILuvBananas (6.6 Changes!)</font>");
+            Game.PrintChat("<font color='#ff9a00'>AutoLevelUp Updated by ILuvBananas (6.6 Changes!)</font>");
             Game.PrintChat("<font color='#7f0e47'>Now you can freely eat a Banana!</font>");
-            Game.PrintChat(Player.BaseSkinName + tipo + " loaded");
+            Game.PrintChat(Player.BaseSkinName + tipo + " Sequence Loaded");
         }
 
         static void Game_OnUpdate(EventArgs args)
